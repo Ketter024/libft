@@ -1,33 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: keetter <keetter@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/02 16:03:00 by keetter           #+#    #+#             */
-/*   Updated: 2024/10/03 13:51:50 by keetter          ###   ########.fr       */
+/*   Created: 2024/10/03 13:43:50 by keetter           #+#    #+#             */
+/*   Updated: 2024/10/03 14:02:49 by keetter          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
+#include <string.h>
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+void	ft_bzero(void *s, size_t n)
 {
-	size_t = i;
+	size_t i;
 
-	i= 0;
-	if (!src || !dst)
-		return (0);
-	while(src[i] && (dstsize < i + 1))
+	i = 0;
+	while (i < n)
 	{
-		dest[i] = src[i];
+		((unsigned char *)s)[i] = 0; //*(unsigned char *)(s + i) = 0;
 		i++;
 	}
-	if (dstsize > 0)
-	{
-		dst[i] = '\0';
-		i++;
-	}
-	return (ft_strlen(src));
+}
+
+int main(void)
+{
+    char str[50] = "Hello, World!";  //s test
+
+    printf("Avant ft_bzero: %s\n", str);  //avant bzero
+    ft_bzero(str, 6);  // Mettre à zéro les 6 premiers octets
+    printf("Après ft_bzero: %s\n", str);  //après bzero
+    return 0;
 }
