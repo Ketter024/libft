@@ -2,6 +2,8 @@
 Libft
 Ta propre bibliothèque rien que pour toi
 
-• isalpha • isdigit • isalnum • isascii • isprint • strlen • memset • bzero • strlcpy • strlcat • strncmp
+fonctions faites
+• isalpha • isdigit • isalnum • isascii • isprint • strlen • memset • bzero • strlcpy • strlcat • strncmp • atoi • memcpy
 
-• memcpy • memmove • toupper • tolower • strchr • strrchr • memchr • memcmp • strnstr • atoi
+fonctions a faire
+• memmove • toupper • tolower • strchr • strrchr • memchr • memcmp • strnstr
