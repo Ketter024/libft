@@ -1,23 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: keetter <keetter@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/01 18:10:52 by keetter           #+#    #+#             */
-/*   Updated: 2024/10/04 16:46:13 by keetter          ###   ########.fr       */
+/*   Created: 2024/10/04 15:11:37 by keetter           #+#    #+#             */
+/*   Updated: 2024/10/04 16:44:31 by keetter          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
+#include <string.h>
 
-size_t	ft_strlen(const char *s)
+
+char	*ft_strrchr(const char *s, int c)
 {
-	size_t i;
+	int	i;
 
-	i = 0;
-	while(s[i])
-		i++;
-	return(i);
+	if (!s)
+		return (NULL);
+
+	i = ft_strlen(s);
+	while (i >= 0)
+	{
+		if (s[i] == (char) c)
+			return ((char *) s + i);
+		i--;
+	}
+	return (NULL);
+}
+
+int	main(void)
+{
+	const char	*str = "Hello, world!";
+	int			ch = 'o';
+	printf("%s\n", ft_strrchr(str, ch));
+	printf("%s\n", strrchr(str, ch));
+	return (0);
 }
