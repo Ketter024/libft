@@ -1,31 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: keetter <keetter@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/03 14:18:34 by keetter           #+#    #+#             */
-/*   Updated: 2024/10/04 11:12:32 by keetter          ###   ########.fr       */
+/*   Created: 2024/10/04 10:55:28 by keetter           #+#    #+#             */
+/*   Updated: 2024/10/04 11:14:23 by keetter          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <string.h>
 
-void	ft_memcpy(void *dst, const void *src, size_t n)
+char *ft_strchr(const char *s, int c)
 {
 	size_t = i;
 
 	i = 0;
-	while (i < n)
+	while (s[i])
 	{
-		((unsigned char *)dst)[i] == ((unsigned char *)src)[i];
+		if (s[i] == (char) c)
+			break;
 		i++;
 	}
-	return (dst);
+	if (s[i] == (char) c)
+		return ((char *) s + i)
+	return (NULL);
 }
 
-size_t ft_strlcpy(char *dst, const char *src, size_t dstsize)
+int main()
 {
-	return size_t();
+	char s[] = "hello";
+
 }

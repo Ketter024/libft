@@ -6,7 +6,7 @@
 /*   By: keetter <keetter@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 16:55:29 by keetter           #+#    #+#             */
-/*   Updated: 2024/10/03 17:43:09 by keetter          ###   ########.fr       */
+/*   Updated: 2024/10/04 11:14:48 by keetter          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,7 @@
 int	ft_tolower(int c)
 {
 	if (c >= 65 && 90 >= c)
-	{
-		c += 32;
-			return (c);
-	}
-	return (c);
+		return (c + 32)
 }
 
 /*int main()
