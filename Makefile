@@ -3,7 +3,7 @@ NAME = libft.a
 
 # Compilateur et flags
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -I ./
 
 # Fichiers source définis
 SRC = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
@@ -28,7 +28,7 @@ $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
 # Compilation des fichiers objets
-%.o: $(SRCDIR)/%.c
+%.o: %.c
 	@mkdir -p $(OBJDIR)
 	$(CC) $(CFLAGS) -I $(INCDIR) -c $< -o $(OBJDIR)/$@
 
