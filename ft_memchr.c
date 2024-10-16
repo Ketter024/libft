@@ -6,12 +6,45 @@
 /*   By: keetter <keetter@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 16:26:23 by keetter           #+#    #+#             */
-/*   Updated: 2024/10/04 16:27:27 by keetter          ###   ########.fr       */
+/*   Updated: 2024/10/15 13:04:04 by keetter          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.c"
-#include <string.h>
+#include "libft.h"
+//#include <stdio.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
-{}
+{
+	size_t	i;
+
+	i = 0;
+	while (i < n)
+	{
+		unsigned char current_char = *(unsigned char *)(s + i);
+		if (current_char == (unsigned char)c)
+		return ((void *)s + i);
+		i++;
+	}
+	return (NULL);
+}
+/*
+int main(void)
+{
+    char str[] = "Hello, World!";
+    char ch = 'H';
+
+	size_t len = sizeof(str);
+
+	char *result = ft_memchr(str, ch, len);
+    if (result != NULL)
+    {
+        printf("Caractère '%c' trouvé à la position : %ld\n", ch, result - str);
+    }
+    else
+    {
+        printf("Caractère '%c' non trouvé dans la chaîne.\n", ch);
+    }
+
+    return 0;
+}
+*/

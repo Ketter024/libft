@@ -4,7 +4,7 @@ Ta propre bibliothèque rien que pour toi
 
 fonctions faites
 • isalpha • isdigit • isalnum • isascii • isprint • strlen • memset • bzero • strlcpy • strlcat • strncmp • atoi • memcpy
-• toupper • tolower • strchr
+• toupper • tolower • strchr • memmove • strrchr • memchr • memcmp
 
 fonctions a faire
-• memmove • strrchr • memchr • memcmp • strnstr • calloc • strdup
+• strnstr • calloc • strdup

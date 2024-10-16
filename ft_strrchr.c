@@ -6,13 +6,13 @@
 /*   By: keetter <keetter@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 15:11:37 by keetter           #+#    #+#             */
-/*   Updated: 2024/10/04 16:44:31 by keetter          ###   ########.fr       */
+/*   Updated: 2024/10/15 15:57:30 by keetter          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
+//#include <stdio.h>
+//#include <string.h>
 
 
 char	*ft_strrchr(const char *s, int c)
@@ -31,7 +31,7 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-
+/*
 int	main(void)
 {
 	const char	*str = "Hello, world!";
@@ -40,3 +40,4 @@ int	main(void)
 	printf("%s\n", strrchr(str, ch));
 	return (0);
 }
+*/
