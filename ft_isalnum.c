@@ -6,7 +6,7 @@
 /*   By: keetter <keetter@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 17:42:29 by keetter           #+#    #+#             */
-/*   Updated: 2024/10/01 17:44:09 by keetter          ###   ########.fr       */
+/*   Updated: 2024/10/16 22:25:09 by keetter          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isalnum(int c)
 {
-	if (ft_isalpha || ft_isdigit)
+	if (ft_isalpha(c) || ft_isdigit(c))
 		return (1);
 	return (0);
 }
