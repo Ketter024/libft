@@ -6,7 +6,7 @@
 /*   By: keetter <keetter@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 17:11:47 by keetter           #+#    #+#             */
-/*   Updated: 2024/10/17 11:14:24 by keetter          ###   ########.fr       */
+/*   Updated: 2024/10/17 12:41:47 by keetter          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,6 @@ void	*ft_memchr(const void *s, int c, size_t n);
 int	ft_memcmp(const void *s1, const void *s2, size_t n);
 char *ft_strnstr(const char *haystack, const char *needle, size_t len);
 int	ft_atoi(const char *str);
+char	*ft_itoa(int n);
 
 #endif
