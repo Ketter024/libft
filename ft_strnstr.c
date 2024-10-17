@@ -6,13 +6,13 @@
 /*   By: keetter <keetter@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 15:58:02 by keetter           #+#    #+#             */
-/*   Updated: 2024/10/16 10:18:24 by keetter          ###   ########.fr       */
+/*   Updated: 2024/10/17 11:38:27 by keetter          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
+//#include <stdio.h>
+//#include <string.h>
 
 char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
@@ -42,7 +42,7 @@ char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 	return (NULL);
 }
 
-int main(void)
+/*int main(void)
 {
     const char *haystack = "Hello, this is a simple test string.";
     const char *needle = "simple";
@@ -57,4 +57,4 @@ int main(void)
         printf("Substring not found within the given length.\n");
 
     return 0;
-}
+}*/
