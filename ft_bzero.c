@@ -6,7 +6,7 @@
 /*   By: keetter <keetter@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 13:43:50 by keetter           #+#    #+#             */
-/*   Updated: 2024/10/03 14:09:14 by keetter          ###   ########.fr       */
+/*   Updated: 2024/10/21 16:36:20 by keetter          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,13 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	while (i < n)
 	{
-		((unsigned char *)s)[i] = 0; //*(unsigned char *)(s + i) = 0;
-		i++;
+		((unsigned char *)s)[i] = 0;
+	i++;
 	}
 }
 
